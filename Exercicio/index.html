@@ -15,25 +15,36 @@
 
     <div class="container">
 
-        <div class="mensagem"></div>
+      
 
-        <form>
+        <form id="meuForm">
             <h2>Faça seu cadastro</h2>
+
+
             <input type="text" placeholder="digite seu nome" id="nome" class="obrigatório" name="nome">
+            <div id="nome_erro" class="erros">Nome precisa ser digitado!</div>
 
             <input type="text" placeholder="digite seu email" id="email" class="obrigatório" name="email">
+            <div id="email_erro" class="erros">email precisa ser digitado!</div>
 
             <input type="text" placeholder="digite seu telefone  ex. (31)3233-4343" id="telefone" class="obrigatório" name="telefone">
+            <div id="telefone_erro" class="erros">telefone precisa ser digitado!</div>
 
             <input type="text" placeholder="digite seu cep ex. 13082-275" id="cep" class="numerico" name="cep">
+            <div id="cep_erro" class="erros">cep precisa ser digitado!</div>
 
             <input type="text" placeholder="digite sua cidade" id= "cidade" class="cidade" name="cidade">
+            <div id="cidade_erro" class="erros">cidade precisa ser digitado!</div>
 
             <input type="text" placeholder="digite sua uf" id="uf" name="uf">
+            <div id="uf_erro" class="erros">Uf precisa ser digitado!</div>
 
-            <button type="submit"  onclick="app.validarEmail(event)"  >Enviar</button>
+
+            <button type="submit"  onclick="app.validarTudo(event)"  >Enviar</button>
         </form>
+
         <div id="resultado">
+            <h3>Formulário enviado com sucesso!</h3>
         </div>
 
         <script type="text/javascript" src="./script.js"></script>

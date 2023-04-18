@@ -1,16 +1,16 @@
 .container{
 text-align: center;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-font-size: 2rem;
+font-size: 1rem;
 }
 
 
 form{
     background-color: #ccc;
-    width: 40%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
-    height: 500px;
+    min-height: 90%;
 }
 
 h2{
@@ -38,15 +38,27 @@ button{
     margin-top: 50px;
     background-color:#ccc;
     border-radius: 10px;
+    margin-bottom: 30px;
 
   
 }
 
 button:hover{
     background-color:blue;
+
 }
 
 
 .erro {
     border: 3px solid red;
   }
+.erros{
+    font-size: 0.8rem;
+    padding-top: 5px;
+    color: red;
+    display: none;
+}
+
+#resultado{
+    display: none;
+}
